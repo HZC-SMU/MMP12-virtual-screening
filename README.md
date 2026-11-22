@@ -48,7 +48,7 @@ molecular docking validation.
 
 ```bash
 python finetune.py \
-    --data_path data/dataset.csv \
+    --data_path path/to/Supplementary_Data_1.csv \
     --pretrained_model "ckpt/Virtual Screening.pt" \
     --freeze_encoder \
     --epochs 50 \
@@ -85,12 +85,17 @@ print(f"Binding score: {score:.4f}")
 
 ## Data
 
-- `data/dataset.csv`: MMP12 fine-tuning set (2649 samples; 1532 active, 1117 inactive)
-- `data/merged_activity.csv`: merged raw MMP12 activity data
-- `data/chembl.csv`, `data/bindingDB.csv`: source data
+The curated MMP-12 bioactivity dataset (2,649 samples; 1,532 active and
+1,117 inactive), the virtual-screening predictions and the docking results are
+provided as Supplementary Data 1-3 of the accompanying article, so they are not
+duplicated in this repository.
+
+- `data/chembl.csv`, `data/bindingDB.csv`: raw source records used to build the
+  curated dataset
 - `data/mmp12.fasta`: MMP12 protein sequence (UniProt P39900)
-- `data/tcmsp_AI_prediction_results.csv`: TCMSP virtual-screening predictions
-- `dock/docking_summary.csv`: AutoDock Vina docking summary
+
+To run fine-tuning, export Supplementary Data 1 to a CSV file containing the
+`smiles`, `sequence` and `label` columns, and pass its path to `--data_path`.
 
 ## Model weights
 
