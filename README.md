@@ -94,8 +94,15 @@ print(f"Binding score: {score:.4f}")
 
 ## Model weights
 
-The inference weights `best_model_full.pt` are too large to store in this
-repository. A download link (Zenodo DOI) will be added after submission.
+The fine-tuned MMP12 inference model is available at `models/best_model_full.pt`
+(stored with Git LFS). It is the model described in this repository, fine-tuned
+on the 2649-sample MMP12-only training set. Clone with Git LFS enabled to
+download the weights:
+
+```bash
+git lfs install
+git clone https://github.com/HZC-SMU/MMP12-virtual-screening.git
+```
 
 ## License and citation
 
