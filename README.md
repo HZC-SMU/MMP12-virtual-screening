@@ -99,6 +99,8 @@ The fine-tuned MMP12 inference model is available at `models/best_model_full.pt`
 on the 2649-sample MMP12-only training set. Clone with Git LFS enabled to
 download the weights:
 
+Zenodo DOI: [10.5281/zenodo.24438954](https://doi.org/10.5281/zenodo.24438954)
+
 ```bash
 git lfs install
 git clone https://github.com/HZC-SMU/MMP12-virtual-screening.git
