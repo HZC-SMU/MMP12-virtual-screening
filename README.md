@@ -103,7 +103,7 @@ Zenodo DOI: [10.5281/zenodo.24438954](https://doi.org/10.5281/zenodo.24438954)
 
 ```bash
 git lfs install
-git clone https://github.com/HZC-SMU/MMP12-virtual-screening.git
+git clone https://github.com/HZC0421/MMP12-virtual-screening.git
 ```
 
 ## License and citation
