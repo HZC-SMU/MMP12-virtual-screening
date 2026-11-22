@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.log
+nohup.out
+*.pt
+*.pth
+*.pkl
+ckpt/
+finetune_ckpt/
+.venv/
+venv/
+.idea/
+.vscode/
